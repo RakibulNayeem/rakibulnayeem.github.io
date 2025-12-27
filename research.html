@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rakibul Nayeem | Research Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO / Scholar Meta -->
+    <meta name="description" content="Research profile of Rakibul Nayeem – AI, Machine Learning, NLP. Publications, projects, and ongoing research for MSc/PhD applications.">
+    <meta name="keywords" content="Rakibul Nayeem, NLP, AI, Machine Learning, Research, Publications, PhD, MSc, MEXT Scholarship, Google Scholar">
+    <link rel="canonical" href="https://yourgithubusername.github.io/Portfolio/research.html">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <header class="hero">
+        <h1>Research Profile</h1>
+        <p>AI, Machine Learning & Natural Language Processing (NLP) Research</p>
+        <a href="index.html" class="cv-btn">← Back to Portfolio</a>
+    </header>
+
+    <!-- PUBLICATIONS -->
+    <section>
+        <h2>Publications</h2>
+
+        <div class="card">
+            <h3>BiLSTM HAttentionDTI</h3>
+            <p>
+                Sequence-based deep learning model to predict drug–protein interactions
+                using BiLSTM with attention mechanism.
+            </p>
+            <span>Status: Under Preparation</span>
+        </div>
+
+        <div class="card">
+            <h3>Sentence Correction using Transformer-based LLMs</h3>
+            <p>
+                Exploring the use of Large Language Models to automatically correct grammatical and semantic errors in text.
+            </p>
+            <span>Status: Published</span>
+            <a href="https://doi.org/your-doi-here" target="_blank">View Paper</a>
+        </div>
+
+        <div class="card">
+            <h3>Retrieval-Augmented Generation (RAG) for Domain-Specific Q&A</h3>
+            <p>
+                Implemented a retrieval-augmented generation framework to answer domain-specific questions efficiently.
+            </p>
+            <span>Status: Preprint</span>
+            <a href="https://arxiv.org/abs/your-arxiv-id" target="_blank">View Preprint</a>
+        </div>
+    </section>
+
+    <!-- ONGOING RESEARCH -->
+    <section>
+        <h2>Ongoing Research</h2>
+        <ul class="list">
+            <li>Large Language Models (LLMs) optimization for Bengali NLP</li>
+            <li>Biomedical text mining & drug-protein interaction prediction</li>
+            <li>Generative AI for sentence correction and summarization</li>
+            <li>Integration of RAG in educational applications for OnkoVerse</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Rakibul Nayeem · Built with HTML & CSS · GitHub Pages</p>
+    </footer>
+
+</div>
+
+<script>
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+}
+
+toggle?.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});
+</script>
+</body>
+</html>
