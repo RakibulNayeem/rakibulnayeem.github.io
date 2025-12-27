@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rakibul Hasan | Portfolio</title>
+    <title>Rakibul Nayeem | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Rakibul Nayeem – Android Developer, Technical Project Manager, AI & NLP Researcher">
-
+    <meta name="description" content="Rakibul Nayeem – Technical Project Manager, Android Developer, AI & NLP Researcher">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -16,25 +15,26 @@
     <!-- HERO -->
     <header class="hero">
         <h1>Rakibul Nayeem</h1>
-        <p>
-            Technical Project Manager · Android Developer · AI & NLP Researcher  
-        </p>
+        <p>Technical Project Manager · Android Developer · AI & NLP Researcher</p>
 
         <div class="hero-links">
             <a href="mailto:rakibul.cse.ruet@gmail.com">Email</a>
             <a href="https://github.com/RakibulNayeem" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/rakibulnayeem/" target="_blank">LinkedIn</a>
+            <a href="Rakibul_Nayeem_CV.pdf" download class="cv-btn">Download CV</a>
         </div>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
     </header>
 
     <!-- ABOUT -->
     <section>
         <h2>About Me</h2>
         <p>
-            I am a Technical Project Manager and Android Developer with experience in
-            R&D engineering, real-time 3D streaming, and mobile application development.
-            I currently work remotely at <strong>Eagle 3D Streaming (USA)</strong> and
-            run an academic coaching platform called <strong>OnkoVerse</strong>.
+            I am a Technical Project Manager and Android Developer with experience in R&D engineering,
+            real-time 3D streaming, and mobile application development. I currently work remotely at
+            <strong>Eagle 3D Streaming (USA)</strong> and run an academic coaching platform called
+            <strong>OnkoVerse</strong>.
         </p>
         <p>
             My long-term goal is to pursue an MSc and PhD in
@@ -63,8 +63,8 @@
             <h3>Technical Project Manager (R&D Engineer)</h3>
             <span>Eagle 3D Streaming · USA · May 2024 – Present</span>
             <p>
-                Leading complex 3D streaming and pixel streaming projects using Agile methodologies.
-                Coordinating international teams, managing timelines, and delivering scalable solutions.
+                Leading complex 3D streaming and pixel streaming projects using Agile methodologies,
+                managing international teams, and delivering scalable solutions.
             </p>
         </div>
 
@@ -94,8 +94,7 @@
         <div class="card">
             <h3>CaringMom</h3>
             <p>
-                Mobile application for anonymous Q&A related to pregnancy, baby care,
-                and family planning.
+                Anonymous Q&A mobile app focused on pregnancy, baby care, and family planning.
             </p>
             <a href="https://github.com/RakibulNayeem/CaringMom" target="_blank">Source Code</a>
         </div>
@@ -103,28 +102,63 @@
         <div class="card">
             <h3>AiniBondhu</h3>
             <p>
-                Legal consultation app connecting users with verified lawyers for instant advice.
+                Legal consultation app connecting users with verified lawyers.
             </p>
         </div>
     </section>
 
-    <!-- RESEARCH -->
+    <!-- PUBLICATIONS -->
     <section>
-        <h2>Research Interests</h2>
+        <h2>Publications & Research</h2>
+
+        <div class="card">
+            <h3>BiLSTM HAttentionDTI</h3>
+            <p>
+                A sequence-based deep learning model to predict drug–protein interactions
+                using BiLSTM with attention mechanism.
+            </p>
+            <span>Status: Under Preparation</span>
+        </div>
+
         <ul class="list">
             <li>Natural Language Processing (NLP)</li>
             <li>Large Language Models (LLMs)</li>
             <li>Retrieval-Augmented Generation (RAG)</li>
             <li>Sentence Correction & Generative AI</li>
         </ul>
+
+        <p>
+            👉 <a href="research.html">View Research Profile</a>
+        </p>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2025 Rakibul Hasan</p>
+        <p>© 2025 Rakibul Nayeem · Built with HTML & CSS · GitHub Pages</p>
     </footer>
 
 </div>
+
+<script>
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggle.textContent = "☀️ Light Mode";
+}
+
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        toggle.textContent = "☀️ Light Mode";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggle.textContent = "🌙 Dark Mode";
+    }
+});
+</script>
 
 </body>
 </html>
